@@ -1,0 +1,11 @@
+<ion-view view-title="Articles">
+  <ion-content>
+    <div class="list">
+      <div class="item item-avatar" ng-repeat="chose in choses">
+      	<img ng-src="http://lorempixel.com/512/512?i=chose-{{chose.id}}">
+        <h2>{{chose.firstAttribute}}</h2>
+        <p>{{chose.secondAttribute}}</p>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

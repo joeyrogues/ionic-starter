@@ -1,0 +1,12 @@
+<ion-view view-title="Articles">
+  <ion-content>
+    <div class="list">
+      <div class="item item-avatar item-icon-right" ng-repeat="article in articles" ui-sref="app.article({articleId: article.id})">
+      	<img ng-src="http://lorempixel.com/512/512?i=article-{{article.id}}">
+        <h2>{{article.title}}</h2>
+        <p>{{article.description}}</p>
+        <i class="icon ion-chevron-right"></i>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
